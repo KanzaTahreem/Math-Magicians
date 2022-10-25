@@ -1,10 +1,9 @@
-import './stylesheets/App.css';
+import Calculator from './components/Calculator';
+import './stylesheets/Calculator.css';
 
 function App() {
   return (
-    <div className="App">
-      Hello React!
-    </div>
+    <Calculator />
   );
 }
 
