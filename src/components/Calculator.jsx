@@ -33,7 +33,7 @@ class Calculator extends React.Component {
               <button type="button" className={styles.btn} onClick={this.handleClick}>AC</button>
               <button type="button" className={styles.btn} onClick={this.handleClick}>+/-</button>
               <button type="button" className={styles.btn} onClick={this.handleClick}>%</button>
-              <button type="button" className={`${styles.btn} ${styles['btn-right']}`} onClick={this.handleClick}>/</button>
+              <button type="button" className={`${styles.btn} ${styles['btn-right']}`} onClick={this.handleClick}>÷</button>
             </div>
             <div>
               <button type="button" className={styles.btn} onClick={this.handleClick}>7</button>
