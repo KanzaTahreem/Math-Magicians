@@ -19,11 +19,14 @@ class Calculator extends React.Component {
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
       <section className={styles.calculator}>
         <div className={styles.container}>
           <div className={styles.display}>
-            <p>0</p>
+            {total}
+            {operation}
+            {next}
           </div>
           <div className={styles.keys}>
             <div>
