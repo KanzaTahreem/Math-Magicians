@@ -5,6 +5,10 @@ import operate from '../logic/operate';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <section className={styles.calculator}>
