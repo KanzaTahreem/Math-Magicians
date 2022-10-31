@@ -29,8 +29,6 @@
 }
 
 .keys {
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -42,19 +40,27 @@
   border: 0.1px solid lightgrey;
 }
 
-.btn-expand {
-  width: 50%;
-}
-
-.btn-right {
-  background-color: #ff7600d4;
-}
-
 .btn:hover {
   cursor: pointer;
   background-color: #d7d6d6;
 }
 
-.btn-right:hover {
+.btn:nth-child(17) {
+  width: 50%;
+}
+
+.btn:nth-child(4),
+.btn:nth-child(8),
+.btn:nth-child(12),
+.btn:nth-child(16),
+.btn:nth-child(19) {
+  background-color: #ff7600d4;
+}
+
+.btn:nth-child(4):hover,
+.btn:nth-child(8):hover,
+.btn:nth-child(12):hover,
+.btn:nth-child(16):hover,
+.btn:nth-child(19):hover {
   background-color: #fc892bd4;
 }

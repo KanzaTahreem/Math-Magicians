@@ -15,6 +15,8 @@ const Calculator = () => {
 
   const { total, next, operation } = state;
 
+  const buttons = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
+
   return (
     <section className={styles.calculator}>
       <div className={styles.container}>
@@ -24,35 +26,9 @@ const Calculator = () => {
           {next}
         </div>
         <div className={styles.keys}>
-          <div>
-            <button type="button" className={styles.btn} onClick={handleClick}>AC</button>
-            <button type="button" className={styles.btn} onClick={handleClick}>+/-</button>
-            <button type="button" className={styles.btn} onClick={handleClick}>%</button>
-            <button type="button" className={`${styles.btn} ${styles['btn-right']}`} onClick={handleClick}>÷</button>
-          </div>
-          <div>
-            <button type="button" className={styles.btn} onClick={handleClick}>7</button>
-            <button type="button" className={styles.btn} onClick={handleClick}>8</button>
-            <button type="button" className={styles.btn} onClick={handleClick}>9</button>
-            <button type="button" className={`${styles.btn} ${styles['btn-right']}`} onClick={handleClick}>x</button>
-          </div>
-          <div>
-            <button type="button" className={styles.btn} onClick={handleClick}>4</button>
-            <button type="button" className={styles.btn} onClick={handleClick}>5</button>
-            <button type="button" className={styles.btn} onClick={handleClick}>6</button>
-            <button type="button" className={`${styles.btn} ${styles['btn-right']}`} onClick={handleClick}>-</button>
-          </div>
-          <div>
-            <button type="button" className={styles.btn} onClick={handleClick}>1</button>
-            <button type="button" className={styles.btn} onClick={handleClick}>2</button>
-            <button type="button" className={styles.btn} onClick={handleClick}>3</button>
-            <button type="button" className={`${styles.btn} ${styles['btn-right']}`} onClick={handleClick}>+</button>
-          </div>
-          <div>
-            <button type="button" className={`${styles.btn} ${styles['btn-expand']}`} onClick={handleClick}>0</button>
-            <button type="button" className={styles.btn} onClick={handleClick}>.</button>
-            <button type="button" className={`${styles.btn} ${styles['btn-right']}`} onClick={handleClick}>=</button>
-          </div>
+          {buttons.map((button) => (
+            <button type="button" className={styles.btn} onClick={handleClick} key={button}>{button}</button>
+          ))}
         </div>
       </div>
     </section>
