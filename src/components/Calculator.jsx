@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from '../stylesheets/Calculator.module.css';
+import '../stylesheets/Calculator.css';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -18,16 +18,16 @@ const Calculator = () => {
   const buttons = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
 
   return (
-    <section className={styles.calculator}>
-      <div className={styles.container}>
-        <div className={styles.display}>
+    <section className="calculator">
+      <div className="container">
+        <div className="display">
           {total}
           {operation}
           {next}
         </div>
-        <div className={styles.keys}>
+        <div className="keys">
           {buttons.map((button) => (
-            <button type="button" className={styles.btn} onClick={handleClick} key={button}>{button}</button>
+            <button type="button" className="btn" onClick={handleClick} key={button}>{button}</button>
           ))}
         </div>
       </div>
