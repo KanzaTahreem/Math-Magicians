@@ -1,8 +1,8 @@
 .navbar {
   display: flex;
-  width: 100%;
+  width: 85vw;
+  margin: 0 auto;
   justify-content: space-between;
-  padding: 1em 2em;
   height: 15vh;
   align-items: center;
 }
