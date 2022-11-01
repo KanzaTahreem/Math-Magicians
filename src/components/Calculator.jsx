@@ -18,20 +18,24 @@ const Calculator = () => {
   const buttons = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
 
   return (
-    <section className="calculator">
-      <div className="container">
-        <div className="display">
-          {total}
-          {operation}
-          {next}
+    <>
+      <h2>Lets do some maths</h2>
+      <section className="calculator">
+        <div className="container">
+          <div className="display">
+            {total}
+            {operation}
+            {next}
+          </div>
+          <div className="keys">
+            {buttons.map((button) => (
+              <button type="button" className="btn" onClick={handleClick} key={button}>{button}</button>
+            ))}
+          </div>
         </div>
-        <div className="keys">
-          {buttons.map((button) => (
-            <button type="button" className="btn" onClick={handleClick} key={button}>{button}</button>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+
+    </>
   );
 };
 
