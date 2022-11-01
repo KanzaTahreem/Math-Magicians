@@ -14,7 +14,7 @@ const Navbar = () => (
           Home
         </NavLink>
       </li>
-
+      <li className="divider" />
       <li className="linkItem">
         <NavLink
           to="calculator"
@@ -23,7 +23,7 @@ const Navbar = () => (
           Calculator
         </NavLink>
       </li>
-
+      <li className="divider" />
       <li className="linkItem">
         <NavLink
           to="quote"
