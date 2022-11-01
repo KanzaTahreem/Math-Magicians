@@ -25,7 +25,14 @@
   padding: 4em 0 2em 0;
 }
 
-.external-link {
+.external-links {
+  display: flex;
+}
+
+.external-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
   margin-right: 2em;
   font-size: 0.7em;
   border-radius: 10px;
@@ -37,7 +44,7 @@
   box-shadow: 4px 4px 10px #c1c1c1, -4px -4px 10px #fff;
 }
 
-.external-link:hover {
+.external-links a:hover {
   cursor: pointer;
   color: #fff;
   background: #f94892;

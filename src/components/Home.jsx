@@ -1,5 +1,7 @@
 import React from 'react';
 import { ExternalLink } from 'react-external-link';
+import { FaGithub } from 'react-icons/fa';
+import { RiShareBoxFill } from 'react-icons/ri';
 import '../stylesheets/Home.css';
 import gif from '../images/math.gif';
 
@@ -34,13 +36,17 @@ const Home = () => (
         </p>
       </div>
 
-      <ExternalLink href="https://github.com/KanzaTahreem/Math-Magicians" className="external-link">
-        Source Code
-      </ExternalLink>
+      <div className="external-links">
+        <ExternalLink href="https://github.com/KanzaTahreem/Math-Magicians">
+          Source Code
+          <FaGithub />
+        </ExternalLink>
 
-      <ExternalLink href="https://kanzatahreem.github.io/Math-Magicians/" className="external-link">
-        View Live
-      </ExternalLink>
+        <ExternalLink href="https://kanzatahreem.github.io/Math-Magicians/">
+          View Live
+          <RiShareBoxFill />
+        </ExternalLink>
+      </div>
 
     </div>
     <div className="home-img">
