@@ -1,19 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../stylesheets/Navbar.css';
 
 const Navbar = () => (
   <nav className="navbar">
     <h1 className="title">Math Magicians</h1>
     <ul className="links">
-      <li>
-        <Link to="/home">Home</Link>
+      <li className="linkItem">
+        <NavLink
+          to="home"
+          className={({ isActive }) => (isActive ? 'activelink' : undefined)}
+        >
+          Home
+        </NavLink>
       </li>
-      <li>
-        <Link to="/calculator">Calculator</Link>
+
+      <li className="linkItem">
+        <NavLink
+          to="calculator"
+          className={({ isActive }) => (isActive ? 'activelink' : undefined)}
+        >
+          Calculator
+        </NavLink>
       </li>
-      <li>
-        <Link to="/quote">Quote</Link>
+
+      <li className="linkItem">
+        <NavLink
+          to="quote"
+          className={({ isActive }) => (isActive ? 'activelink' : undefined)}
+        >
+          Quote
+        </NavLink>
       </li>
     </ul>
   </nav>
