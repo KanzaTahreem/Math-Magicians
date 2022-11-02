@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../stylesheets/Quote.css';
 
 const Quote = () => {
   const [quote, setQuote] = useState('');
@@ -25,15 +26,19 @@ const Quote = () => {
 
   return (
     <>
-      <section className="quote">
-        <h2>{quote}</h2>
-        <p>
-          {author}
-        </p>
+      <section className="quote-container">
+        <h2 className="quote">
+          {`"${quote}"`}
+          <span className="author">
+            {' '}
+            -
+            {' '}
+            {author}
+          </span>
+        </h2>
+        <button type="button" className="generate" onClick={NewQuote}>Generate Quote</button>
       </section>
-      <button type="button" className="btn" onClick={NewQuote}>Generate New Quote</button>
     </>
-
   );
 };
 
