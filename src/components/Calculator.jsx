@@ -19,18 +19,24 @@ const Calculator = () => {
 
   return (
     <>
-      <h2>Lets do some maths</h2>
-      <section className="calculator">
-        <div className="container">
-          <div className="display">
-            {total}
-            {operation}
-            {next}
-          </div>
-          <div className="keys">
-            {buttons.map((button) => (
-              <button type="button" className="btn" onClick={handleClick} key={button}>{button}</button>
-            ))}
+      <section className="cal-container">
+        <h2>
+          Lets do some
+          {' '}
+          <i> maths!</i>
+        </h2>
+        <div className="calculator">
+          <div className="container">
+            <div className="display">
+              {total}
+              {operation}
+              {next}
+            </div>
+            <div className="keys">
+              {buttons.map((button) => (
+                <button type="button" className="btn" onClick={handleClick} key={button}>{button}</button>
+              ))}
+            </div>
           </div>
         </div>
       </section>
