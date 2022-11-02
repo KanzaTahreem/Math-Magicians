@@ -8,7 +8,8 @@ const Navbar = () => (
     <ul className="links">
       <li className="linkItem">
         <NavLink
-          to="home"
+          to="/"
+          end
           className={({ isActive }) => (isActive ? 'activelink' : undefined)}
         >
           Home
