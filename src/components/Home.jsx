@@ -22,11 +22,11 @@ const Home = () => (
           <li className="listItem">Read a random math-related quote.</li>
         </ul>
         <p>
-          The app is developed using a
+          The app is developed using
           {' '}
           <i>React,</i>
           {' '}
-          and styled through
+          and styled through the
           {' '}
           <i>React basic styling.</i>
           {' '}
