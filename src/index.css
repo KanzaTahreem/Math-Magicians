@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #eaedef;
+  color: #3c3e41;
+  letter-spacing: 2px;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3c3e41;
+}
+
+h1,
+h2 {
+  text-shadow: 2px 2px 5px #999191;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
 }
