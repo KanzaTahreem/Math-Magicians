@@ -14,7 +14,7 @@ beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
-test('loads and displays Quote', async () => {
+test('loads the quote component and displays Quote on button click', async () => {
   render(<Quote />);
   const button = screen.getByText('Generate Quote');
   const quote = screen.getByRole('heading');
