@@ -20,21 +20,21 @@ const Calculator = () => {
   return (
     <>
       <section className="cal-container">
-        <h2>
+        <h2 data-testid="subtitle">
           Lets do some
           {' '}
           <i> maths!</i>
         </h2>
         <div className="calculator">
           <div className="container">
-            <div className="display">
+            <div className="display" data-testid="display">
               {total}
               {operation}
               {next}
             </div>
             <div className="keys">
               {buttons.map((button) => (
-                <button type="button" className="btn" onClick={handleClick} key={button}>{button}</button>
+                <button type="button" className="btn" onClick={handleClick} key={button} data-testid={button}>{button}</button>
               ))}
             </div>
           </div>

@@ -4,11 +4,12 @@ import '../stylesheets/Navbar.css';
 
 const Navbar = () => (
   <nav className="navbar">
-    <h1 className="title">Math Magicians</h1>
-    <ul className="links">
+    <h1 className="title" data-testid="title">Math Magicians</h1>
+    <ul className="links" data-testid="nav-links">
       <li className="linkItem">
         <NavLink
-          to="home"
+          to="/"
+          end
           className={({ isActive }) => (isActive ? 'activelink' : undefined)}
         >
           Home
