@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="quote-container"
+>
+  <h2
+    className="quote"
+  >
+    ""
+    <span
+      className="author"
+    >
+       
+      -
+       
+    </span>
+  </h2>
+  <button
+    className="generate"
+    onClick={[Function]}
+    type="button"
+  >
+    Generate Quote
+  </button>
+</section>
+`;

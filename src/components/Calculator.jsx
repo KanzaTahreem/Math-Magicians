@@ -1,50 +1,48 @@
-import React from 'react';
-import styles from '../stylesheets/Calculator.module.css';
+import { useState } from 'react';
+import '../stylesheets/Calculator.css';
+import calculate from '../logic/calculate';
 
-// eslint-disable-next-line react/prefer-stateless-function
-class Calculator extends React.Component {
-  render() {
-    return (
-      <section className={styles.calculator}>
-        <div className={styles.container}>
-          <div className={styles.display}>
-            <p>0</p>
-          </div>
-          <div className={styles.keys}>
-            <div>
-              <button type="button" className={styles.btn}>AC</button>
-              <button type="button" className={styles.btn}>+/-</button>
-              <button type="button" className={styles.btn}>%</button>
-              <button type="button" className={`${styles.btn} ${styles['btn-right']}`}>/</button>
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
+  const handleClick = (e) => {
+    setState((state) => calculate(state, e.target.textContent));
+  };
+
+  const { total, next, operation } = state;
+
+  const buttons = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
+
+  return (
+    <>
+      <section className="cal-container">
+        <h2 data-testid="subtitle">
+          Lets do some
+          {' '}
+          <i> maths!</i>
+        </h2>
+        <div className="calculator">
+          <div className="container">
+            <div className="display" data-testid="display">
+              {total}
+              {operation}
+              {next}
             </div>
-            <div>
-              <button type="button" className={styles.btn}>7</button>
-              <button type="button" className={styles.btn}>8</button>
-              <button type="button" className={styles.btn}>9</button>
-              <button type="button" className={`${styles.btn} ${styles['btn-right']}`}>x</button>
-            </div>
-            <div>
-              <button type="button" className={styles.btn}>4</button>
-              <button type="button" className={styles.btn}>5</button>
-              <button type="button" className={styles.btn}>6</button>
-              <button type="button" className={`${styles.btn} ${styles['btn-right']}`}>-</button>
-            </div>
-            <div>
-              <button type="button" className={styles.btn}>1</button>
-              <button type="button" className={styles.btn}>2</button>
-              <button type="button" className={styles.btn}>3</button>
-              <button type="button" className={`${styles.btn} ${styles['btn-right']}`}>+</button>
-            </div>
-            <div>
-              <button type="button" className={`${styles.btn} ${styles['btn-expand']}`}>0</button>
-              <button type="button" className={styles.btn}>.</button>
-              <button type="button" className={`${styles.btn} ${styles['btn-right']}`}>=</button>
+            <div className="keys">
+              {buttons.map((button) => (
+                <button type="button" className="btn" onClick={handleClick} key={button} data-testid={button}>{button}</button>
+              ))}
             </div>
           </div>
         </div>
       </section>
-    );
-  }
-}
+
+    </>
+  );
+};
 
 export default Calculator;
