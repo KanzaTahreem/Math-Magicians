@@ -42,7 +42,7 @@ const Home = () => (
           <FaGithub />
         </ExternalLink>
 
-        <ExternalLink href="https://kanzatahreem.github.io/Math-Magicians/">
+        <ExternalLink href="https://react-math-magician.netlify.app/">
           View Live
           <RiShareBoxFill />
         </ExternalLink>
