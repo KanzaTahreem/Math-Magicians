@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
         </svg>
       </a>
       <a
-        href="https://kanzatahreem.github.io/Math-Magicians/"
+        href="https://react-math-magician.netlify.app/"
         rel="noopener noreferrer"
         target="_blank"
       >
