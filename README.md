@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Math Magicians
 
 _Math magicians_ is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
@@ -12,8 +14,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - HTML
 - CSS
 - JavaScript
-- Webpack
+- Babel
+- JSX
 - React
+- Webpack
+- [React Router](https://reactrouter.com/en/main)
 - [Linters](https://github.com/microverseinc/linters-config/tree/master/react-redux)
 
 ## Live Demo Link
@@ -64,11 +69,16 @@ In the project directory, you can run:
 - Twitter: [@kanza_tahreem](https://twitter.com/kanza_tahreem)
 - LinkedIn: [Kanza Tahreem](https://www.linkedin.com/in/kanza-tahreem/)
 
+👤 **Author**
+
+- GitHub: [@jfoyarzo](https://github.com/jfoyarzo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorge-felipe-oyarzo-contreras-647118247/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/KanzaTahreem/Leaderboard/issues).
+Feel free to check the [issues page](https://github.com/KanzaTahreem/Math-Magicians/issues).
 
 ## Show your support
 
