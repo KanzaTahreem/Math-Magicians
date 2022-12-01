@@ -11,8 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Built With
 
-- HTML
-- CSS
+- HTML/CSS
 - JavaScript
 - Babel
 - JSX
